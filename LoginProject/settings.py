@@ -37,11 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'drf_yasg',
 
     'rest_framework',
     'corsheaders',
     'rest_framework_simplejwt',
     'users',
+    'pokeapi',
     'rest_framework.authtoken',
 ]
 
@@ -52,12 +54,12 @@ REST_FRAMEWORK = {
     'DEFAULT_THROTTLE_CLASSES': [
         # 'rest_framework.throttling.AnonRateThrottle',
         # 'rest_framework.throttling.UserRateThrottle',
-        'rest_framework.throttling.ScopedRateThrottle',
+        # 'rest_framework.throttling.ScopedRateThrottle',
     ],
-        'DEFAULT_THROTTLE_RATES': {
+    'DEFAULT_THROTTLE_RATES': {
         # 'anon': '10/day',
         # 'user': '10/day',
-        'get': '5/day',
+        # 'get': '5/day',
     },
 
 }
