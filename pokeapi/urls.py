@@ -14,8 +14,8 @@ router.register(r"v3", PokemonModelViewSet,basename="pokeapi")
 
 urlpatterns = [
 
-    path("v2/", PokemonViewSet.as_view(), name="pokemon"),
-    path("v2/<id>", PokemonOneViewSet.as_view(), name="pokemonone"),
+    # path("v2/", PokemonViewSet.as_view(), name="pokemon"),
+    # path("v2/<id>", PokemonOneViewSet.as_view(), name="pokemonone"),
 
 
 ]
