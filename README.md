@@ -66,12 +66,12 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-#### login
+#### Login: http://127.0.0.1:8000/login/
 
 ```bash
 {
-"email": "*********",
-"password": "*********"
+"email": "**********************************",
+"password": "*******************************"
 }
 ```
 
