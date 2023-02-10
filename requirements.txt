@@ -7,3 +7,4 @@ drf-spectacular
 drf-yasg
 
 mysqlclient
+gunicorn
