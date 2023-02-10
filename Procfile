@@ -1,1 +1,1 @@
-web: gunicorn 'LoginProject.wsgi'
+web: python manage.py migrate && gunicorn 'LoginProject.wsgi'
