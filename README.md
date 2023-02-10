@@ -66,15 +66,6 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-#### Login: http://127.0.0.1:8000/login/
-
-```bash
-{
-"email": "**********************************",
-"password": "*******************************"
-}
-```
-
 <br>
 
 - ### Todas las ruta de Swagger en http://127.0.0.1:8000/swagger/
