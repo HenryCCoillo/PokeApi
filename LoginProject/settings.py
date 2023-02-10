@@ -99,23 +99,23 @@ WSGI_APPLICATION = 'LoginProject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
 # DATABASES = {
-#         'default': {
-#             'ENGINE': 'django.db.backends.mysql',
-#             'NAME': 'pokeapi',
-#             'USER': 'admin',
-#             'PASSWORD': 'Minombre123',
-#             'HOST': 'database-2.c6oj0o1uiegd.us-east-1.rds.amazonaws.com',
-#             'PORT': '3306',
-#         }
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
+# }
+
+DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': 'pokeapi',
+            'USER': 'admin',
+            'PASSWORD': 'Minombre123',
+            'HOST': 'database-2.c6oj0o1uiegd.us-east-1.rds.amazonaws.com',
+            'PORT': '3306',
+        }
+    }
 
 
 
