@@ -5,3 +5,5 @@ djangorestframework-simplejwt
 drf-yasg
 drf-spectacular
 drf-yasg
+
+mysqlclient
