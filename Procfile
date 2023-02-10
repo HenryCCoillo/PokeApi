@@ -1,1 +1,1 @@
-web: 'gunicorn LoginProject.wsgi'
+web: gunicorn 'LoginProject.wsgi'
