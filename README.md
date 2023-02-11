@@ -2,7 +2,40 @@
 <h1 style="text-align: center;">Proyecto POCKEAPI - Ruta B1</h1>
 </div>
 
-### Proyecto Pokemon Api Frontend (Complementario)
+
+# Despliegue en AWS
+
+  ### Usuario Prueba
+```bash
+henry@123.com
+```
+  
+### Password
+```
+12345678
+```
+  
+  ![image](https://user-images.githubusercontent.com/86704638/218283415-63e1ad0d-fa82-4275-899c-240559024d2c.png)
+
+
+  http://52.201.180.165/                  Frontend
+  
+  http://52.201.180.165:8000/             Backend
+  
+  http://52.201.180.165:8000/login/       Login User
+ 
+  http://52.201.180.165:8000/signup/      Register User
+  
+  http://52.201.180.165:8000/swagger/     Swagger
+  
+  http://52.201.180.165:8000/pokeapi/v3/  Lista Pokemon
+  
+  
+
+
+
+
+# Proyecto Pokemon Api Frontend (Complementario)
 
 https://github.com/HenryCCoillo/PokeApi-Frontend
 
@@ -40,14 +73,7 @@ env\Scripts\activate.bat
 ```bash
 pip install -r requirements.txt
 ```
-#### Migrar Base de Datos
-La base esta en SQLite
-```bash
-python manage.py makemigrations
-```
-```bash
-python manage.py migrate
-```
+
 #### Iniciar Proyecto
 ```bash
 python manage.py runserver
