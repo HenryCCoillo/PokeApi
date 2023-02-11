@@ -15,12 +15,10 @@ if response.status_code == 200:
         url_pokemon = k['url']
         response_url_pokemon = requests.get(url_pokemon)
         if response_url_pokemon.status_code == 200:
-            # print('200 ok ->')
             data_pokemon = response_url_pokemon.json()
             ## id del pokemon
             pokemon_id = data_pokemon['id']
             poke_pokemon['pokemon_id']=pokemon_id
-            # print(pokemon_id)
 
             ## nombre del pokemon
             name_pokemon = data_pokemon['name']
@@ -32,20 +30,22 @@ if response.status_code == 200:
             ## peso del pokemon
             weight_pokemon = data_pokemon['weight']
 
-            ## peso del pokemon
+            ## descripcion del pokemon
             descripction = f'La altura del pokemon {round(float(height_pokemon)*0.1,2)} m y su peso es {round(float(weight_pokemon)*0.1,2)} kg'
             poke_pokemon['descripction']=descripction
+
+            ## Habilidades del pokemon
             for k in data_pokemon['stats']:
                 poke_pokemon[k['stat']['name']]=k['base_stat']
 
-            ## Juegos en los que esta presente el pokemon
+            ## imagen del pokemon
             url_imagen= data_pokemon['sprites']['other']
             pokemon_image=url_imagen['official-artwork']['front_default']
             poke_pokemon['img']=pokemon_image
             all_pokemon.append(poke_pokemon)
         else:
             print('404')
-    # Guarda los datos del Pokémon en un archivo local en formato JSON
+    # Guardar en formato JSON
     with open("dbpokemon.json", "w") as file:
         json.dump(all_pokemon, file)
     print("Exito ...")
